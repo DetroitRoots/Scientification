@@ -1,54 +1,103 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdbool.h>
 
+int input();
+float a,b,c,d,e=0;
+void output(float);
 int main()
 {
-    printf("Scientific Calculator Main Menu \n");
+	float result;
+	int choice, num;
+	printf("Scientific Calculator\n");
+    sleep(2);
+    printf("Type the initial number of your selection\n");
     sleep(1);
-    printf("Please choose what function do you want to perform.\n");
-    sleep(1);
+    printf("ARITHMETIC CALCULATIONS\n");
+	printf("1- Addition\n");
+	printf("11- Subtraction\n");
+	printf("111- Multiplication\n");
+	printf("1111- Division\n");
+    printf("2- Find Modulus\n");
+    printf("3- ASCII converter \n");
+    printf("GEOMETRIC CALCULATIONS\n");
+	printf("4- to calculate area of circle\n");
+	printf("5- to calculate area of square\n");
+	printf("6 to calculate area of sphere\n");
+	choice = input();
+	
+	switch (choice) 
+	{
 
-    float a,b,c,d,e =0;
-    int z,x,y =0;
-    char OP;
-    printf("What op do you want?");
-    scanf("%c", &OP);
-    printf("NBR1:   ");
-    scanf("%f", &a);
-    printf("NBR2:   ");
-    scanf("%f", &b);
-    printf("NBR3:   ");
-    scanf("%f", &c); //upgraded
-    printf("NBR4:   ");
-    scanf("%f", &d);
-   /* printf("Modulus: ");
-    scanf("%d", &z);
-    printf("Modulus2: ");
-    scanf("%d", &x);*/
+	case 1:
+	{
+		printf("NBR1: \n");
+		scanf("%f", &a);
+		printf("NBR2: \n");
+		scanf("%f", &b);
+		printf("NBR3: \n");
+		scanf("%f", &c);
+		printf("NBR4: \n");
+		scanf("%f", &d);
+		e=a+b+c+d;
+	printf("RESULT= %f", e);
+	break;
+	}
+	case 11:
+	{
+		printf("NBR1: \n");
+		scanf("%f", &a);
+		printf("NBR2: \n");
+		scanf("%f", &b);
+		printf("NBR3: \n");
+		scanf("%f", &c);
+		printf("NBR4, \n");
+		scanf("%f", &d);
+		e=a-b-c-d;
+		printf ("RESULT= %f", e);
+		break;
+	}
 
-    switch (OP)
-    {
-    case '+': e =a+b+c+d;
-        break;
-    case '-': e= a-b;
-        break;
-    case '*': e=a*b*c*d;
-        break;
-    case '/': e=a/b/c/d;
-        break;
-        default:printf("\n Invalid");
-    }
-    printf("Value= %f", e);
-
-    return (0);
+	case 4: 
+	{
+		printf("Enter radius:\n");
+		num = input();
+		result = 3.14 * num * num;
+		printf("Area of sphere=");
+		output(result);
+		break;
+	}
+	case 5: 
+	{
+		printf("Enter side of square:\n");
+		num = input();
+		result = num * num;
+		printf("Area of square=");
+		output(result);
+		break;
+	}
+	case 6: 
+	{
+		printf("Enter radius:\n");
+		num = input();
+		result = 4 * (3.14 * num * num);
+		printf("Area of sphere=");
+		output(result);
+		break;
+	}
+	default:
+		printf("wrong Input\n");
+	}
+	return 0;
+}
+int input()
+{
+	int number;
+	scanf("%d", &number);
+	return (number);
 }
 
-
-
-//Make a menu so user chooses what to perform.
-
-
-//last step, convert this into a scientific calculator
-
+void output(float number)
+{
+	printf("%f", number);
+}
