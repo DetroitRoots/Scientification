@@ -1,5 +1,3 @@
-# Scientification
-
 <h1 align='center'>  Scientification </h1>
 
 <h1 align='center'> Scientific Calculator with lots of different functions </h1> 
