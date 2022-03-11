@@ -57,6 +57,20 @@ int main()
 		printf ("RESULT= %f", e);
 		break;
 	}
+	case 111:
+	{
+		printf("NBR1: \n");
+		scanf("%f", &a);
+		printf("NBR2: \n");
+		scanf("%f", &b);
+		printf("NBR3: \n");
+		scanf("%f", &c);
+		printf("NBR4: \n");
+		scanf("%f", &d);
+		e=a*b*c*d;
+		printf ("RESULT= %f", e);
+		break;
+	}
 
 	case 4: 
 	{
