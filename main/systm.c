@@ -20,7 +20,9 @@ int main()
 	printf("111- Multiplication\n");
 	printf("1111- Division\n");
     printf("2- Find Modulus\n");
-    printf("3- ASCII converter \n");
+	//printf("ASCII CONVERTER\n");
+    //printf("3- ASCII to Character\n");
+	//rintf("33- Character to ASCII\n");
     printf("GEOMETRIC CALCULATIONS\n");
 	printf("4- to calculate area of circle\n");
 	printf("5- to calculate area of square\n");
@@ -97,6 +99,16 @@ int main()
 		printf("RESULT= %d", z);
 		break;
 	}
+	/*case 3:
+	{	
+		char asciiCH;
+		int  asciiNBR;
+		printf("Character: \n");
+		scanf("%c", &asciiCH);
+		asciiNBR = asciiCH;
+		printf("ASCII value of %c = %d", &asciiCH, &asciiNBR);
+		break;		
+	} */
 
 	case 4: 
 	{
