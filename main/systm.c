@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <math.h>
+
+#define PI 3.14159265
 
 int input();
 float a,b,c,d,e=0;
-int x,y,z;
+int V_,y,z;
+double x,ret,val;
+//double sin(double x);  //needs to be checked.
 void output(float);
 int main()
 {
@@ -94,10 +99,10 @@ int main()
 	case 2:
 	{
 		printf("NBR1: \n");
-		scanf("%d", &x);
+		scanf("%d", &V_);
 		printf("NBR2 \n");
 		scanf("%d", &y);
-		z = x%y;
+		z = V_%y;
 		printf("RESULT= %d", z);
 		break;
 	}
@@ -140,10 +145,10 @@ int main()
 		break;
 	}
 	case 7: //TESTING
-	{ 
+	{
 	printf("Choose Function\n");
 	printf("77- Sine\n");
-	printf("-771- Cosine\n");
+	printf("771- Cosine\n");
 	printf("772- Tangent\n");
 	printf("773- Cotangent\n");
 	printf("774- Logarithm\n");
@@ -152,11 +157,15 @@ int main()
 	printf("777- NTH Root\n");
 		int choice2;
 		choice2=input();
-		switch (choice2)
+		switch (choice2) //testing
 		{
-		case 77:
+		case 77: //needs a fix
 		{
-			printf("It works\n");
+			printf("DEGREES: \n");
+			scanf("%lf", &x);
+			val=PI/180;
+			//ret=sin(x*val);  //there's a problem here...
+			printf("The sine of %lf is %lf degrees", x, ret);
 			break;
 		}
 		case 882:
