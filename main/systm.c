@@ -4,6 +4,7 @@
 
 int input();
 float a,b,c,d,e=0;
+int x,y,z;
 void output(float);
 int main()
 {
@@ -12,7 +13,7 @@ int main()
 	printf("Scientific Calculator\n");
     sleep(2);
     printf("Type the initial number of your selection\n");
-    sleep(1);
+    sleep(3);
     printf("ARITHMETIC CALCULATIONS\n");
 	printf("1- Addition\n");
 	printf("11- Subtraction\n");
@@ -83,6 +84,17 @@ int main()
 		scanf("%f", &d);
 		e=a/b/c/d;
 		printf("RESULLT= %f", e);
+		break;
+	}
+
+	case 2:
+	{
+		printf("NBR1: \n");
+		scanf("%d", &x);
+		printf("NBR2 \n");
+		scanf("%d", &y);
+		z = x%y;
+		printf("RESULT= %d", z);
 		break;
 	}
 
