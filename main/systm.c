@@ -9,7 +9,7 @@ int input();
 float a,b,c,d,e=0;
 int V_,y,z;
 double x,ret,val;
-//double sin(double x);  //needs to be checked.
+double sin(double x);  //needs to be checked.
 void output(float);
 int main()
 {
@@ -164,8 +164,8 @@ int main()
 			printf("DEGREES: \n");
 			scanf("%lf", &x);
 			val=PI/180;
-			//ret=sin(x*val);  //there's a problem here...
-			printf("The sine of %lf is %lf degrees", x, ret);
+			ret=sin(x*val);  //there's a problem here...  //REF: https://stackoverflow.com/questions/5005363/undefined-reference-to-sin
+			printf("SINE: %lf DEGREES: %lf", x, ret);
 			break;
 		}
 		case 882:
