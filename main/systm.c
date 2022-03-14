@@ -5,15 +5,16 @@
 
 #define PI 3.14159265
 
-
 int input();
-float a,b,c,d,e=0;
-int V_,y,z;
-double x,ret,val;
-double sin(double x);
 void output(float);
 int main()
 {
+	
+	float a,b,c,d,e=0;
+	int V_,y,z;
+	double x,ret,val;
+	double sin(double x);
+	double cos(double x);
 	float result;
 	int choice, num;
 	printf("Scientific Calculator\n");
@@ -160,15 +161,24 @@ int main()
 		choice2=input();
 		switch (choice2) //testing
 		{
-		case 77: //needs a fix
+		case 77:
 		{
-			printf("DEGREES: \n");
+			printf("VALUE: \n");
 			scanf("%lf", &x);
 			val=PI/180;
-			ret=x*val;
-			printf("SINE: %lf DEGREES: %lf", x, ret);
+			//ret=sin(x*val);
+			printf("SIN: %lf DEGREES: %lf ", x, ret);
 			break;
 		}
+		case 771: 
+		{
+			printf("VALUE: \n");
+			scanf("%lf", &x);
+			//Wait
+			val=PI/180;
+			//ret=cos(x*val);
+			printf("COS: %lf DEGREES: %lf ", x, ret);
+		} 
 		case 882:
 		{
 			printf("yeah\n");
@@ -196,3 +206,5 @@ void output(float number)
 {
 	printf("%f", number);
 }
+
+//add exit and back button
