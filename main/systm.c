@@ -12,9 +12,16 @@ int main()
 	
 	float a,b,c,d,e=0;
 	int V_,y,z;
+	//L16 to 20 -> <math.h>
 	double x,ret,val;
 	double sin(double x);
 	double cos(double x);
+	double tanVAL, _NBER;
+	double cot,degR, radiant;  //name the other variables again with better names when fixing bugs.
+	double log (double x); 
+
+
+
 	float result;
 	int choice, num;
 	printf("Scientific Calculator\n");
@@ -174,14 +181,39 @@ int main()
 		{
 			printf("VALUE: \n");
 			scanf("%lf", &x);
-			//Wait
 			val=PI/180;
 			//ret=cos(x*val);
 			printf("COS: %lf DEGREES: %lf ", x, ret);
+			break;
 		} 
+		/*case 772:
+		{	
+			printf("VALUE: \n");
+			scanf ("%lf", &_NBER);
+			//tanVAL= tan(_NBER);
+			printf("TANGENT: %lf=%f", _NBER,tanVAL);
+			break;
+		}
+		case 773:
+		{
+			printf("VALUE: \n");
+			scanf("%lf", &cot);
+			//degR=cot(radiant); notclr
+			printf("COT: %lf=%lf", cot,radiant);
+			break;			//check the formula
+		}
+		case  774:
+		{
+			print("VALUE: \n");
+			scanf("%lf", &log);
+			//ret=log(--);
+			printf("LOG: %lf, is: %lf", log, ret);
+
+			break;
+		} */
 		case 882:
 		{
-			printf("yeah\n");
+			printf("yeah\n"); // ?
 			break;
 		}
 		default: printf("Function Complete");
@@ -206,5 +238,3 @@ void output(float number)
 {
 	printf("%f", number);
 }
-
-//add exit and back button
