@@ -12,7 +12,7 @@ int main()
 	
 	float a,b,c,d,e=0;
 	int V_,y,z;
-	//L16 to 20 -> <math.h>
+	//L16 to 21 -> <math.h>
 	double x,ret,val;
 	double sin(double x);
 	double cos(double x);
@@ -34,14 +34,12 @@ int main()
 	printf("111- Multiplication\n");
 	printf("1111- Division\n");
     printf("2- Find Modulus\n");
-	//printf("ASCII CONVERTER\n");
+	//ASCII CHANGE -3 with another INPUT
+	//printf("ASCII CONVERTER\n"); 
     //printf("3- ASCII to Character\n");
 	//rintf("33- Character to ASCII\n");
-    printf("GEOMETRIC CALCULATIONS\n");
-	printf("4- to calculate area of circle\n");
-	printf("5- to calculate area of square\n");
-	printf("6- to calculate area of sphere\n");
-	printf("7 - TRIGONOMETRIC FUNCTIONS\n"); //testing menu within menu
+    printf("3-GEOMETRIC CALCULATIONS\n");
+	printf("4 - TRIGONOMETRIC FUNCTIONS\n"); //testing menu within menu
 
 	choice = input();
 	
@@ -126,49 +124,64 @@ int main()
 		break;		
 	} */
 
-	case 4: 
+	case 3:
 	{
-		printf("Enter radius:\n");
-		num = input();
-		result = 3.14 * num * num;
-		printf("Area of sphere=");
-		output(result);
-		break;
-	}
-	case 5: 
-	{
-		printf("Enter side of square:\n");
-		num = input();
-		result = num * num;
-		printf("Area of square=");
-		output(result);
-		break;
-	}
-	case 6: 
-	{
-		printf("Enter radius:\n");
-		num = input();
-		result = 4 * (3.14 * num * num);
-		printf("Area of sphere=");
-		output(result);
-		break;
-	}
-	case 7: //TESTING
+		printf("31- to calculate area of circle\n");
+		printf("32- to calculate area of square\n");
+		printf("33- to calculate area of sphere\n");
+		
+			int choice3;
+			choice3=input();
+			switch (choice3)
+		{
+				case 31: 
+			{
+				printf("Enter radius:\n");
+				num = input();
+				result = 3.14 * num * num;
+				printf("Area of sphere=");
+				output(result);
+				break;
+
+			}
+				case 32: 
+			{
+				printf("Enter side of square:\n");
+				num = input();
+				result = num * num;
+				printf("Area of square=");
+				output(result);
+				break;
+			}
+				case 33: 
+			{
+				printf("Enter radius:\n");
+				num = input();
+				result = 4 * (3.14 * num * num);
+				printf("Area of sphere=");
+				output(result);
+				break;
+			}
+			break;
+
+		} break;
+	} break;
+	case 4: //TESTING
 	{
 	printf("Choose Function\n");
-	printf("77- Sine\n");
-	printf("771- Cosine\n");
-	printf("772- Tangent\n");
-	printf("773- Cotangent\n");
-	printf("774- Logarithm\n");
-	printf("775- Raise to a power\n");
-	printf("776- Root Square\n");
-	printf("777- NTH Root\n");
+	printf("41- Sine\n");
+	printf("42- Cosine\n");
+	printf("43- Tangent\n");
+	printf("44- Cotangent\n");
+	printf("45- Logarithm\n");
+	printf("46- Raise to a power\n");
+	printf("47- Root Square\n");
+	printf("48- NTH Root\n");
 		int choice2;
 		choice2=input();
 		switch (choice2) //testing
 		{
-		case 77:
+		case 41:
 		{
 			printf("VALUE: \n");
 			scanf("%lf", &x);
@@ -177,7 +190,7 @@ int main()
 			printf("SIN: %lf DEGREES: %lf ", x, ret);
 			break;
 		}
-		case 771: 
+		case 42: 
 		{
 			printf("VALUE: \n");
 			scanf("%lf", &x);
@@ -186,7 +199,7 @@ int main()
 			printf("COS: %lf DEGREES: %lf ", x, ret);
 			break;
 		} 
-		/*case 772:
+		/*case 43:
 		{	
 			printf("VALUE: \n");
 			scanf ("%lf", &_NBER);
@@ -194,7 +207,7 @@ int main()
 			printf("TANGENT: %lf=%f", _NBER,tanVAL);
 			break;
 		}
-		case 773:
+		case 44:
 		{
 			printf("VALUE: \n");
 			scanf("%lf", &cot);
@@ -202,7 +215,7 @@ int main()
 			printf("COT: %lf=%lf", cot,radiant);
 			break;			//check the formula
 		}
-		case  774:
+		case  45:
 		{
 			print("VALUE: \n");
 			scanf("%lf", &log);
