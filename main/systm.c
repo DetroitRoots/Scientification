@@ -47,67 +47,73 @@ int main()
 	case 1:
 	
 		{
-			printf("11- Addition\n");
-			printf("12- Subtraction\n");
-			printf("13- Multiplication\n");
-			printf("14- Division\n");
-			break;
-		
-		
+			{
+				printf("11- Addition\n");
+				printf("12- Subtraction\n");
+				printf("13- Multiplication\n");
+				printf("14- Division\n");
+				int choice1;
+				choice1 = input();
+				switch (choice1)
+			
+			
+								
 				case 11:
-			{
-				printf("NBR1: \n");
-				scanf("%f", &a);
-				printf("NBR2: \n");
-				scanf("%f", &b);
-				printf("NBR3: \n");
-				scanf("%f", &c);
-				printf("NBR4: \n");
-				scanf("%f", &d);
-				e=a+b+c+d;
-				printf("RESULT= %f", e);
-				break;
-			}
+				{
+					printf("NBR1: \n");
+					scanf("%f", &a);
+					printf("NBR2: \n");
+					scanf("%f", &b);
+					printf("NBR3: \n");
+					scanf("%f", &c);
+					printf("NBR4: \n");
+					scanf("%f", &d);
+					e=a+b+c+d;
+					printf("RESULT= %f", e);
+					break;
+				}
 				case 12:
-			{
-				printf("NBR1: \n");
-				scanf("%f", &a);
-				printf("NBR2: \n");
-				scanf("%f", &b);
-				printf("NBR3: \n");
-				scanf("%f", &c);
-				printf("NBR4: \n");
-				scanf("%f", &d);
-				e=a-b-c-d;
-				printf ("RESULT= %f", e);
-				break;
-			}
+				{
+					printf("NBR1: \n");
+					scanf("%f", &a);
+					printf("NBR2: \n");
+					scanf("%f", &b);
+					printf("NBR3: \n");
+					scanf("%f", &c);
+					printf("NBR4: \n");
+					scanf("%f", &d);
+					e=a-b-c-d;
+					printf ("RESULT= %f", e);
+					break;
+				}
 				case 13:
-			{
-				printf("NBR1: \n");
-				scanf("%f", &a);
-				printf("NBR2: \n");
-				scanf("%f", &b);
-				printf("NBR3: \n");
-				scanf("%f", &c);
-				printf("NBR4: \n");
-				scanf("%f", &d);
-				e=a*b*c*d;
-				printf ("RESULT= %f", e);
-				break;
-			}
-				case 14:
-			{
-				printf("NBR1: \n");
-				scanf("%f", &a);
-				printf("NBR2: \n");
-				scanf("%f", &b);
-				printf("NBR3: \n");
-				scanf("%f", &c);
-				printf("NBR4: \n");
-				scanf("%f", &d);
-				e=a/b/c/d;
-				printf("RESULLT= %f", e);
+				{
+					printf("NBR1: \n");
+					scanf("%f", &a);
+					printf("NBR2: \n");
+					scanf("%f", &b);
+					printf("NBR3: \n");
+					scanf("%f", &c);
+					printf("NBR4: \n");
+					scanf("%f", &d);
+					e=a*b*c*d;
+					printf ("RESULT= %f", e);
+					break;
+				}
+					case 14:
+				{
+					printf("NBR1: \n");
+					scanf("%f", &a);
+					printf("NBR2: \n");
+					scanf("%f", &b);
+					printf("NBR3: \n");
+					scanf("%f", &c);
+					printf("NBR4: \n");
+					scanf("%f", &d);
+					e=a/b/c/d;
+					printf("RESULLT= %f", e);
+					break;
+				}
 				break;
 			}
 
