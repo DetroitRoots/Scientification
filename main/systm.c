@@ -25,21 +25,19 @@ int main()
 	float result;
 	int choice, num;
 	printf("Scientific Calculator\n");
-    sleep(2);
+	printf("^^^^^^^^^^^^^^^^^^^^^\n");
+    sleep(1);
     printf("Type the initial number of your selection\n");
-    sleep(3);
+    sleep(2);
+	printf("\n");
     printf("1- ARITHMETIC CALCULATIONS\n");
-	/*printf("1- Addition\n");
-	printf("11- Subtraction\n");
-	printf("111- Multiplication\n");
-	printf("1111- Division\n"); */
-    printf("2- Find Modulus\n"); 
-	//ASCII CHANGE -3 with another INPUT
+    printf("2- FIND MODULUS\n"); 
 	//printf("ASCII CONVERTER\n"); 
     //printf("3- ASCII to Character\n");
 	//rintf("33- Character to ASCII\n");
     printf("3- GEOMETRIC CALCULATIONS\n");
-	printf("4- TRIGONOMETRIC FUNCTIONS\n"); //testing menu within menu
+	printf("4- TRIGONOMETRIC FUNCTIONS\n");
+	printf("5- ASCII CONVERSIONS\n");
 
 	choice = input();
 	switch (choice) 
@@ -212,7 +210,7 @@ int main()
 			//ret=cos(x*val);
 			printf("COS: %lf DEGREES: %lf ", x, ret);
 			break;
-		} 
+		}
 		/*case 43:
 		{	
 			printf("VALUE: \n");
@@ -238,17 +236,35 @@ int main()
 
 			break;
 		} */
-		case 882:
-		{
-			printf("yeah\n"); // ?
-			break;
-		}
+		
 		default: printf("Function Complete");
 			break;
 		}
 		break;
 
 	}
+	case 5:
+			{
+				printf("51- ASCII to character\n");
+				printf("52- Character to ASCII\n");
+				int choice5;
+				choice5=input();
+				switch (choice5)
+				{
+					case 51:
+					{
+						printf("TEST\n");
+						break;
+					}
+					case 52:
+					{
+						printf("TEST 2 \n");
+						break;
+					}
+					break;
+				}break;
+			}break;
+
 	default:
 		printf("wrong Input\n");
 	}
