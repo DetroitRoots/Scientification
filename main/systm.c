@@ -125,17 +125,6 @@ int main()
 		printf("RESULT= %d", z);
 		break;
 	}
-	/*case 3:
-	{	
-		char asciiCH;
-		int  asciiNBR;
-		printf("Character: \n");
-		scanf("%c", &asciiCH);
-		asciiNBR = asciiCH;
-		printf("ASCII value of %c = %d", &asciiCH, &asciiNBR);
-		break;		
-	} */
-
 	case 3:
 	{
 		printf("31- to calculate area of circle\n");
@@ -247,13 +236,18 @@ int main()
 			{
 				printf("51- ASCII to character\n");
 				printf("52- Character to ASCII\n");
+				char AscIIchar;
+				int AsCIIint; //point
 				int choice5;
 				choice5=input();
 				switch (choice5)
 				{
 					case 51:
 					{
-						printf("TEST\n");
+						printf("Character: \n");
+						scanf("%c", &AscIIchar);
+						AscIIchar = AsCIIint;
+						printf("ASCII value of %c = %d", AscIIchar, AsCIIint);
 						break;
 					}
 					case 52:
