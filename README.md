@@ -12,10 +12,10 @@ Simply choose the function you want from the menu screen and then do the operati
 
 
 <h2 align='center'>
-Detroit Roots
+Luca Ross
 </h2>
 
 <h3 align='center'>
 
-[![GitHub DetroitRoots](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DetroitRoots)   
-[![Tumblr: DetroitRoots](https://img.shields.io/badge/DetroitRoots-%2336465D.svg?style=for-the-badge&logo=Tumblr&logoColor=white)](http://detroitroots.tumblr.com/)</h3>
+[![GitHub LucaRoss](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LucadiRoss)   
+</h3>
